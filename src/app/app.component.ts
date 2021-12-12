@@ -35,6 +35,6 @@ export class AppComponent {
   onSubmit() {
     console.log(this.myform);
     console.log(this.myform.get('firstForm.nome').value);
-
+    alert('Ciao ' + this.myform.get('firstForm.nome').value);
   }
 }
