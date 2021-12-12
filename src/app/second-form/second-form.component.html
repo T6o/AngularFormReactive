@@ -1,0 +1,29 @@
+<form autocomplete="off" [formGroup]="form">
+  <mat-card class="form-container">
+    <mat-card-title>Second Form</mat-card-title>
+
+    <mat-form-field>
+      <mat-label>Strada</mat-label>
+      <input
+        matInput
+        placeholder="Ex. via termine 9"
+        formControlName="strada"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Numero</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="Ex. 9"
+        formControlName="numero"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Codice Postle</mat-label>
+      <input matInput placeholder="Ex. 40125" formControlName="codicePostale" />
+    </mat-form-field>
+  </mat-card>
+</form>

@@ -1,0 +1,38 @@
+<form autocomplete="off" [formGroup]="form">
+  <mat-card class="form-container">
+    <mat-card-title>FirstForm</mat-card-title>
+
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Ex. Marco" formControlName="nome" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cognome</mat-label>
+      <input matInput placeholder="Ex. Tiseo" formControlName="cognome" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>e-mail</mat-label>
+      <input
+        type="email"
+        matInput
+        placeholder="Ex. marco.tiseo@mail.it"
+        formControlName="email"
+      />
+    </mat-form-field>
+    <!-- /email -->
+
+    <!-- age -->
+    <mat-form-field>
+      <mat-label>Eta</mat-label>
+      <input
+        type="number"
+        matInput
+        placeholder="Ex. 36"
+        formControlName="eta"
+      />
+    </mat-form-field>
+    <!-- /age -->
+  </mat-card>
+</form>
