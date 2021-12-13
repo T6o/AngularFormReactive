@@ -14,5 +14,9 @@ export class FirstFormComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.rootFormGroup.control.get(this.formGroupName) as FormGroup;
+
+    this.form.get('nome').valueChanges.subscribe((nome) => {
+      console.log('Nome Cambiato ' + nome);
+    });
   }
 }
