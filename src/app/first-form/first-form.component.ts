@@ -8,6 +8,7 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
 })
 export class FirstFormComponent implements OnInit {
   @Input() formGroupName: string;
+  @Input() formName: string;
   form: FormGroup;
 
   constructor(private rootFormGroup: FormGroupDirective) {}

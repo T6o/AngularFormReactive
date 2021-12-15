@@ -1,6 +1,13 @@
 <form [formGroup]="myform" (ngSubmit)="onSubmit()">
-  <app-first-form formGroupName="firstForm"></app-first-form>
-  <app-second-form formGroupName="secondForm"></app-second-form>
+  <app-first-form
+    formName="Residenza"
+    formGroupName="firstForm"
+  ></app-first-form>
+  <app-first-form
+    formName="Domicilio"
+    formGroupName="firstForm"
+  ></app-first-form>
+
   <button
     style="margin-top:20px; width:200px"
     mat-raised-button
