@@ -25,9 +25,10 @@ export class AppComponent {
         eta: ['', Validators.required],
       }),
       secondForm: this.fb.group({
-        strada: ['', Validators.required],
-        numero: ['', Validators.required],
-        codicePostale: ['', Validators.required],
+        nome: ['', Validators.required],
+        cognome: ['', Validators.required],
+        email: ['', Validators.required],
+        eta: ['', Validators.required],
       }),
     });
   }
